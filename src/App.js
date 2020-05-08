@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import PhoneForm from "./components/PhoneForm";
+import Contact from "./components/Contact";
 
 class App extends Component {
 
+
     render() {
         return (
-            <div>
-                <PhoneForm/>
-            </div>
+            <Contact/>
         );
     }
 }
