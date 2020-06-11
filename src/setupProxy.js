@@ -2,7 +2,7 @@
 //
 // module.exports = function(app) {
 //   app.use(
-//       createProxyMiddleware('/api/*', {
+//       createProxyMiddleware('/api', {
 //         target: 'http://peaceful-shelf-28006.herokuapp.com/',
 //         changeOrigin: true
 //       }));
