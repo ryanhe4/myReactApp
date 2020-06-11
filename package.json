@@ -33,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://peaceful-shelf-28006.herokuapp.com",
+      "pathRewrite": {
+        "^/api": "/"
+      }
+    }
   }
 }
