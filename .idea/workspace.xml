@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d79138-8672-4740-8a09-7bf2120d391a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PhoneForm.js" afterDir="false" />
+    <list default="true" id="83d79138-8672-4740-8a09-7bf2120d391a" name="Default Changelist" comment="Log List, UI and so on ..">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +45,23 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -66,18 +78,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -91,11 +91,21 @@
       <workItem from="1578752804465" duration="1647000" />
       <workItem from="1578799418129" duration="5852000" />
       <workItem from="1578827460613" duration="1534000" />
+      <workItem from="1591883252218" duration="5118000" />
+      <workItem from="1591890375349" duration="47000" />
     </task>
+    <task id="LOCAL-00001" summary="Log List, UI and so on ..">
+      <created>1591890126891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591890126891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -117,27 +127,40 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Log List, UI and so on .." />
+    <option name="LAST_COMMIT_MESSAGE" value="Log List, UI and so on .." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1047" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578827501499">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1444" height="192" key="GridCell.Tab.0.bottom" timestamp="1591885505576">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1047" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578827501499" />
-    <state width="1399" height="262" key="GridCell.Tab.0.bottom" timestamp="1578827785363">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1444" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591885505576" />
+    <state width="1444" height="192" key="GridCell.Tab.0.center" timestamp="1591885505576">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1399" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578827785363" />
-    <state width="1399" height="262" key="GridCell.Tab.0.center" timestamp="1578827785363">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1444" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591885505576" />
+    <state width="1444" height="192" key="GridCell.Tab.0.left" timestamp="1591885505576">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1399" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578827785363" />
-    <state width="1399" height="262" key="GridCell.Tab.0.left" timestamp="1578827785362">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1444" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591885505576" />
+    <state width="1444" height="192" key="GridCell.Tab.0.right" timestamp="1591885505576">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1399" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578827785362" />
-    <state width="1399" height="262" key="GridCell.Tab.0.right" timestamp="1578827785363">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1444" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591885505576" />
+    <state x="247" y="64" key="SettingsEditor" timestamp="1591890095477">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1399" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578827785363" />
+    <state x="247" y="64" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591890095477" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1591890132814">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591890132814" />
+    <state x="447" y="145" key="search.everywhere.popup" timestamp="1591883833500">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591883833500" />
   </component>
 </project>
