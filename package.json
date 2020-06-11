@@ -36,7 +36,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://peaceful-shelf-28006.herokuapp.com",
+      "target": "https://peaceful-shelf-28006.herokuapp.com",
       "pathRewrite": {
         "^/api": "/"
       }
