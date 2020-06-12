@@ -5,8 +5,8 @@
     "/**": "index.html"
   },
   "proxies": {
-    "/": {
-      "origin": "${API_URL}"
+    "/api/": {
+      "origin": "https://peaceful-shelf-28006.herokuapp.com/api"
     }
   }
 }
