@@ -52,9 +52,11 @@ class App extends Component {
     try {
       const check = await axios.post('/api/v1.0/crawler/getlink', {
         uri: this.state.url,
-        dateString: dateString || 0,
+        dateString: dateString.dateString || 0,
         emails:emailstring,
       });
+
+      console.log(check);
 
       if (check.data['check'] === true) {
         //local Storage set;
