@@ -28,14 +28,15 @@ class App extends Component {
     }
   };
   handleAddButtonClick = async () => {
-    const {email, url} = this.state;
+    const {email, url, emails} = this.state;
 
     const addEmail = await axios.post('/api/v1.0/crawler/addemail',
         {url, email});
     if (addEmail.data.success) {
       alert(`이메일 ${email} 추가 성공`);
+      emails.push(email);
       this.setState({
-        emails: this.state.emails.push(email),
+        emails,
       });
     } else {
       alert('추가 실패!');
