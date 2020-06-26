@@ -37,6 +37,8 @@ class App extends Component {
       this.setState({
         emails: this.state.emails.push(email),
       });
+    } else {
+      alert('추가 실패!');
     }
   };
 
@@ -58,7 +60,7 @@ class App extends Component {
                 <div>
                   <input placeholder={'이메일'} onChange={this.inputChange}
                          id="email"/>
-                  <button> 추가</button>
+                  <button onClick={this.handleAddButtonClick}> 추가</button>
                   {emailList}
                 </div>
             )
