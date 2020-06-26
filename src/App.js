@@ -21,7 +21,7 @@ class App extends Component {
     console.log(checkUrl);
 
     if (checkUrl.data.exists) {
-      this.setstate({
+      this.setState({
         emails: checkUrl.data.emails,
         run:true,
       });
