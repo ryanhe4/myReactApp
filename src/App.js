@@ -29,16 +29,6 @@ class App extends Component {
   };
 
   render() {
-    const printlist = this.state.emails.map(
-        item => {
-          return (
-              <div>
-                {item}
-              </div>
-          );
-        },
-    );
-
     return (
         <div className="App">
           <h2> URL 입력 </h2>
@@ -53,9 +43,6 @@ class App extends Component {
             )
                 && (
                    <button> 추가</button>
-            )
-            && (
-                {printlist}
             )
           }
         </div>
