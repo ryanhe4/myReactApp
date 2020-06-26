@@ -23,12 +23,29 @@ class App extends Component {
     if (checkUrl.data.exists) {
       this.setState({
         emails: checkUrl.data.emails,
-        run:true,
+        run: true,
+      });
+    }
+  };
+  handleAddButtonClick = async () => {
+    const {email, url} = this.state;
+
+    const addEmail = await axios.post('/api/v1.0/crawler/addemail',
+        {url, email});
+    if (addEmail.data.success) {
+      alert(`이메일 ${email} 추가 성공`);
+      this.setState({
+        emails: this.state.emails.push(email),
       });
     }
   };
 
   render() {
+    const emailList = this.state.emails.map((item, i) => {
+      return (<div key={i}>
+        {item}
+      </div>);
+    });
     return (
         <div className="App">
           <h2> URL 입력 </h2>
@@ -38,11 +55,12 @@ class App extends Component {
           <h2> 이메일 리스트 </h2>
           {
             this.state.run && (
-                <input placeholder={'이메일'} onChange={this.inputChange}
-                       id="email"/>
-            )
-                && (
-                   <button> 추가</button>
+                <div>
+                  <input placeholder={'이메일'} onChange={this.inputChange}
+                         id="email"/>
+                  <button> 추가</button>
+                  {}
+                </div>
             )
           }
         </div>
