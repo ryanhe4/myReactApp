@@ -51,6 +51,9 @@ class App extends Component {
                 <input placeholder={'이메일'} onChange={this.inputChange}
                        id="email"/>
             )
+                && (
+                   <button> 추가</button>
+            )
             && (
                 {printlist}
             )
